@@ -1,5 +1,7 @@
 package com.gtentechnologies.PageObjects;
 
+import java.util.List;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -28,6 +30,20 @@ public class HomePage extends PageActions{
 	@FindBy(xpath="//*[@class='d-none d-md-block']")
 	protected WebElement ser;
 	
+	@FindBy(xpath="//*[@id='gatsby-focus-wrapper']/div[3]/div/div/div[2]/ol/li")
+	protected List<WebElement> servalue;
+	
+	@FindBy(xpath="//*[@id=\"gatsby-focus-wrapper\"]/div[3]/div/div/div[1]/p")
+	protected WebElement aboutusdesc;
+	
+	
+	@FindBy(xpath="//*[@id=\"basic-navbar-nav\"]/div/a[6]/span")
+	protected WebElement contactusnav;
+	
+	
+	
+	
+	
 	
 	
 	public String home() {
@@ -47,6 +63,20 @@ public class HomePage extends PageActions{
 	public String servtext() throws InterruptedException {
 		scroll(scr);
 		return getElementText(ser);
+	}
+	
+	public  List<String> getservvalue() {
+		return getListofTextFromWebElements(servalue);
+		
+	}
+	
+	public String aboutUsServ() {
+		return getElementText(aboutusdesc);
+	}
+	
+	public void navigatetocontactus() {
+		clickElement(contactusnav);
+	
 	}
 
 

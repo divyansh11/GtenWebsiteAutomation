@@ -5,8 +5,9 @@
     <classes>
       <class name="com.gtentechnologies.tests.HomePageTest">
         <methods>
+          <include name="checkAllServicesAreDisplayed"/>
           <include name="driverInitialize"/>
-          <include name="checkWhetherServicesIsCorrect"/>
+          <include name="checkWhetherWebTitleIsCorrect"/>
         </methods>
       </class> <!-- com.gtentechnologies.tests.HomePageTest -->
     </classes>
