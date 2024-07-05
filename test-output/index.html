@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Divyansh\AppData\Local\Temp\testng-eclipse-1086607706\testng-customsuite.xml</span>
+                    <span>C:\Users\Divyansh\AppData\Local\Temp\testng-eclipse-119322826\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,6 +104,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.gtentechnologies.tests.HomePageTest" class="method navigator-link" hash-for-method="checkWhetherHomeTitleIsCorrect">checkWhetherHomeTitleIsCorrect</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.gtentechnologies.tests.HomePageTest" class="method navigator-link" hash-for-method="checkWhetherServicesIsCorrect">checkWhetherServicesIsCorrect</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -138,6 +143,13 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="checkWhetherServicesIsCorrect">
+                  </a> <!-- checkWhetherServicesIsCorrect -->
+                  <span class="method-name">checkWhetherServicesIsCorrect</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="checkWhetherWebTitleIsCorrect">
                   </a> <!-- checkWhetherWebTitleIsCorrect -->
                   <span class="method-name">checkWhetherWebTitleIsCorrect</span>
@@ -148,7 +160,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Divyansh\AppData\Local\Temp\testng-eclipse-1086607706\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Divyansh\AppData\Local\Temp\testng-eclipse-119322826\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -197,20 +209,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'checkWhetherHomeTitleIsCorrect')
+data.setCell(0, 1, 'checkWhetherServicesIsCorrect')
 data.setCell(0, 2, 'com.gtentechnologies.tests.HomePageTest')
-data.setCell(0, 3, 79);
+data.setCell(0, 3, 104);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'checkWhetherWebTitleIsCorrect')
+data.setCell(1, 1, 'checkWhetherHomeTitleIsCorrect')
 data.setCell(1, 2, 'com.gtentechnologies.tests.HomePageTest')
-data.setCell(1, 3, 11);
+data.setCell(1, 3, 81);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'checkWhetherWebTitleIsCorrect')
+data.setCell(2, 2, 'com.gtentechnologies.tests.HomePageTest')
+data.setCell(2, 3, 25);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 90 ms</span>
+              <span class="suite-total-time">Total running time: 210 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -243,15 +259,23 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkWhetherHomeTitleIsCorrect</span>
-                <span class="method-start">4887 ms</span>
+                <span class="method-start">4004 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">driverInitialize</span>
-                <span class="method-start">4970 ms</span>
+                <span class="method-start">4089 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkWhetherServicesIsCorrect</span>
+                <span class="method-start">7555 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">driverInitialize</span>
+                <span class="method-start">7661 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkWhetherWebTitleIsCorrect</span>
-                <span class="method-start">8313 ms</span>
+                <span class="method-start">11510 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

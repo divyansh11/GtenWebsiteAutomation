@@ -22,5 +22,12 @@ public class HomePageTest extends BaseTest{
 		String actualtitle="Home | GTEN";
 		Assert.assertEquals(displaytitle, actualtitle);
 	}
+	
+	@Test
+	public void checkWhetherServicesIsCorrect() throws InterruptedException {
+		String displayser=homepage.servtext();
+		String actualser="PRODUCT ENGINEERING";
+		Assert.assertEquals(displayser, actualser);
+	}
 
 }

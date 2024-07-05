@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import com.gtentechnologies.PageObjects.HomePage;
@@ -39,5 +40,11 @@ public class BaseTest {
 	public void initpages() {
 		homepage=new HomePage(driver);
 	}
+	
+//	@AfterMethod
+//	public void tearDown() {
+//		driver.quit();
+//	}
+	
 
 }

@@ -1,5 +1,6 @@
 package com.gtentechnologies.PageObjects;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,13 +22,31 @@ public class HomePage extends PageActions{
 	protected WebElement Homename;
 	
 	
+	@FindBy(css=".py-3.achievement-section.row")
+	protected WebElement scr;
+	
+	@FindBy(xpath="//*[@class='d-none d-md-block']")
+	protected WebElement ser;
+	
+	
+	
 	public String home() {
 		return getElementText(Homename);
 		
 	}
+	public void scroll(WebElement element) {
+		JavascriptExecutor js = (JavascriptExecutor )driver;
+		js.executeScript("arguments[0].scrollIntoView(true);", element);
+	}
+	
 	
 	public String title() {
 		return gettitle(driver);
+	}
+	
+	public String servtext() throws InterruptedException {
+		scroll(scr);
+		return getElementText(ser);
 	}
 
 
