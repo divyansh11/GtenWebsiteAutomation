@@ -32,7 +32,8 @@ public class ContactUsPage extends PageActions{
 	@FindBy(xpath="//*[@id=\"exampleForm.ControlTextarea1\"]")
 	protected WebElement message;
 	
-	
+	@FindBy(xpath="//*[@id=\"gatsby-focus-wrapper\"]/div[1]/div/div/main/div[2]/div/div[2]/div/form/div[4]/div/button")
+	protected WebElement submit;
 	
 
 }

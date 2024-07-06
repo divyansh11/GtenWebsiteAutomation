@@ -18,7 +18,6 @@ public class HomePageTest extends BaseTest{
 		Assert.assertEquals(displayheading, actualhead);
 		
 	}
-	
 	@Test
 	
 	public void checkWhetherWebTitleIsCorrect() {
